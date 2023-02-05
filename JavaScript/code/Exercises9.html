@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>My Javascript Project</title>
+    <link rel="stylesheet" href="exercise.css">
+    <link rel="icon" href="favicon-32x32.png">
+  </head>
+  <body>
+    <h1 class="title">First Week Project</h1>
+    <div class="center">
+      <div class="first-week">
+        <div class="todolist">    <!--Todo list-->
+          <h1>To-do List</h1>
+          <input id="todo-title" type="text" />
+          <input id="date-picker" type="date" />
+          <button onclick="addTodo()">Add Todo</button>
+          <div id="todo-list"></div>
+        </div>
+        
+        <script src="exercise.js"> </script>
+    
+        <div class="hypo-calculator">    <!--Hypothenus calculator-->
+          <h1>Hyphotenus Calculator</h1>
+          <div class="input-row">
+            <input type="number" id="a-side">
+          <label for="a-side">A-side measurement</label>
+          <input type="number" id="b-side">
+          <label for="b-side">B-side measurement</label>
+          </div>
+          
+          <div id="output">0</div>
+          <button onclick="hypo();">Calculate</button>
+        </div>
+    
+        <div class="counter">
+          <h1>Counter</h1>
+          <label id="counter-label">0</label>
+          <div>
+             <button onclick="decrease();" class="d-btn">Decrease</button>
+            <button onclick="reset();" class="r-btn">Reset</button>
+            <button onclick="increase();" class="i-btn">Increase</button>
+          </div>
+        </div>
+  
+        <div class="dice">
+          <h1>Random Number (Dice)</h1>
+          <label id="randNum">0</label>
+          <button onclick="roll();">Roll</button>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
